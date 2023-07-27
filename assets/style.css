@@ -29,3 +29,16 @@ h1, h2 {
 .background{
     background-color: bisque;
 }
+.btn{
+    width: 200;
+    height: 50;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.ice{
+    width: 200;
+    height: 50;
+    background-color: white;
+    color: black;
+}

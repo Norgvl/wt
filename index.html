@@ -10,14 +10,39 @@
         }
     </style>
     <link rel="stylesheet" href="./assets/style.css">
+
 </head>
 <body>
     <!-- header  -->
     <header class="wrapper">
-        <h1 style = "font-size: 30px;" class="title">Добрый день!</h1>
+        <h1 style = "font-size: 30px;" id="el" class = "title">Добрый день!</h1>
     </header>
 
     <section class="wrapper background">
+        <script>
+            let name = prompt("Как вас зовут?");
+            alert("Привет "+name);
+
+            let age = parseInt(prompt("Сколько вам лет?"));
+            switch(age){
+                case 18: {
+                    alert("Вы совершеннолетний, все можно!");
+                    break;
+                }
+                case 10: {
+                    alert("Вам надо делать уроки")
+                    break;
+                }
+                case 30: {
+                    alert("Ложитесь спать, завтра на работу")
+                    break;
+                }
+                default:{
+                    alert("Мы не знаем, что вам делать")
+                    break;
+                }
+            }
+        </script>
 
         <div class="box">
             <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam rem corporis, beatae sint itaque est labore laboriosam animi suscipit consequuntur fuga. Exercitationem sequi eligendi praesentium, beatae eum consectetur similique soluta?</h2>
@@ -28,10 +53,13 @@
         </div>
     </section>
     <section class="wrapper">
+        <button class ="btn" id = "btn1">
+            Нажми меня
+        </button>
         <img src="https://w.forfun.com/fetch/8f/8fcaf638ba9181d33eb7479b3ca339f3.jpeg" width="400" height="400">
         <img crc="./assets/images/8-699.jpg" width="400"> 
     </section>
-    <section class="wrapper">
+    <section class="wrapper" >
         <h2>Список:</h2>
         <ul>
             <li class list><a href="https://gb.ru/lessons/344600">Пункт 1</a></li>
@@ -42,7 +70,7 @@
         </ul>
     </section>
     <footer>
-
+        <script src ="assets/scripts/scripts.js"></script>
     </footer>
     
 </body>
